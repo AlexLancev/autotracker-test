@@ -1,0 +1,12 @@
+.notificationsBtn {
+    padding: 5px;
+
+    &:hover .notificationsIcon {
+        color: rgba(0, 0, 0, 0.32);
+    }
+}
+
+.notificationsIcon {
+    color: rgba(0, 0, 0, 0.22);
+    transition: color 0.3s ease;
+}
