@@ -8,7 +8,9 @@ export const PersonalAccount: React.FC = () => {
   return (
     <div className={styles.personalAccount}>
       <Notifications />
-      <button className={styles.personalAccountUserBtn} type='button'>TextName</button>
+      <button className={styles.personalAccountUserBtn} type='button'>
+        TextName
+      </button>
     </div>
   );
 };

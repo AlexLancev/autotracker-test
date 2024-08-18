@@ -1,4 +1,4 @@
 export const Paths = {
-    home: '/',
-    authorizationPage: '/authorization',
-  };
+  home: '/',
+  authorizationPage: '/authorization',
+};

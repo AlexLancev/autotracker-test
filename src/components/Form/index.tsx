@@ -9,6 +9,7 @@ import {
   InputAdornment,
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
+
 import { FormValues, Schema } from '../../utils/validationShema';
 
 import styles from './Form.module.css';
@@ -98,7 +99,7 @@ export const Form = () => {
         )}
 
         <Button
-            disabled={!isValid}
+          disabled={!isValid}
           type='submit'
           variant='contained'
           sx={{

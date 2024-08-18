@@ -9,22 +9,34 @@ export const Menu: React.FC = () => {
     <nav className={styles.nav} aria-label='Главное меню сайта'>
       <ul className={styles.navList}>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Учетные записи</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Учетные записи
+          </NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Пользователи</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Пользователи
+          </NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Объекты</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Объекты
+          </NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Водители</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Водители
+          </NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Уведомления</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Уведомления
+          </NavLink>
         </li>
         <li className={styles.listItem}>
-          <NavLink className={styles.itemLink} to={``}>Задания</NavLink>
+          <NavLink className={styles.itemLink} to={``}>
+            Задания
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -5,7 +5,11 @@ import { AuthorizationPage } from 'pages/AuthorizationPage';
 import { HomePage } from 'pages/HomePage';
 import { Layout } from 'components/Layout';
 
-import {Paths} from '../../paths';
+import { getTrackers } from 'store/trackers/trackersSlice';
+import { AppDispatch } from 'store/index';
+import { useDispatch } from 'react-redux';
+
+import { Paths } from '../../paths';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -18,6 +22,12 @@ function ScrollToTop() {
 }
 
 export const App: React.FC = () => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  React.useEffect(() => {
+    dispatch(getTrackers());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
