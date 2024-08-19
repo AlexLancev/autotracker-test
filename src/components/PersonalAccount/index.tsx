@@ -9,7 +9,7 @@ export const PersonalAccount: React.FC = () => {
     <div className={styles.personalAccount}>
       <Notifications />
       <button className={styles.personalAccountUserBtn} type='button'>
-        TextName
+        userName
       </button>
     </div>
   );

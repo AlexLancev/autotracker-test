@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import {
@@ -10,12 +10,15 @@ import {
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
+import { useNavigate } from 'react-router-dom';
+
 import { FormValues, Schema } from '../../utils/validationShema';
 
 import styles from './Form.module.css';
 
 export const Form = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const handleClickShowPassword = () => setShowPassword(!showPassword);
 
@@ -30,6 +33,7 @@ export const Form = () => {
   });
 
   const onSubmit: SubmitHandler<FormValues> = () => {
+    navigate(`/`);
     reset();
   };
 

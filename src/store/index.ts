@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import trackersReducer from 'store/trackers/trackersSlice';
+import trackerIdSlice from 'store/trackerId/trackerIdSlice';
 
 export const store = configureStore({
   reducer: {
-    teams: trackersReducer,
+    trackers: trackersReducer,
+    trackerId: trackerIdSlice,
   },
 });
 

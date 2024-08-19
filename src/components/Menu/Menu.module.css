@@ -1,8 +1,39 @@
 .nav {
 }
 .navList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
 }
 .listItem {
 }
 .itemLink {
+    position: relative;
+    color: #515151;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #0cb814;
+    }
+
+    &::after {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 1px;
+        background-color: #0cb814;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+
+        &::after{
+            opacity: 1;
+        }
+    }
 }
