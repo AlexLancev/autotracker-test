@@ -4,6 +4,7 @@ import { PanelControl } from 'pages/HomePage/PanelControl';
 
 import { AppBar } from './AppBar';
 import { DeviceList } from './DeviceList';
+import { CreateTracker } from './CreateTracker';
 
 export const HomePage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ export const HomePage: React.FC = () => {
       <AppBar />
       <PanelControl />
       <DeviceList />
+      <CreateTracker />
     </>
   );
 };
